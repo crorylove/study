@@ -12,8 +12,6 @@
         <module>study_web</module>
     </modules>
 
-
-
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -54,5 +52,14 @@
             <artifactId>springjdbc-iterable</artifactId>
             <version>1.0.3</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
+
 </project>
