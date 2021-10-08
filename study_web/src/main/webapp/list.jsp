@@ -1,5 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <!-- 网页使用的语言 -->
 <html lang="zh-CN">
@@ -41,7 +43,8 @@
             <th>邮箱</th>
             <th>操作</th>
         </tr>
-        <c:forEach items="$(users)" var="user" varStatus="s">
+
+        <c:forEach items="${users}" var="user" varStatus="s">
             <tr>
                 <td>${s.count}</td>
                 <td>${user.name}</td>
@@ -52,6 +55,7 @@
                 <td>${user.email}</td>
                 <td><a class="btn btn-default btn-sm" href="update.html">修改</a>&nbsp;<a class="btn btn-default btn-sm" href="">删除</a></td>
             </tr>
+
         </c:forEach>
 
 
